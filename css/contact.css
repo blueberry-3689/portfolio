@@ -24,7 +24,22 @@ top: 230px;
 margin: auto;
 }
 .form{
-    position: absolute;
-    z-index: 6;
-    top: 530px;
+position: absolute;
+z-index: 6;
+top: 530px;
+}
+form div{
+margin-bottom: 14px;
+}
+label{
+font-size: 12px;
+margin-bottom: 10px;
+display: block;
+}
+input[type="text"],input[type="email"],textarea{
+background-color:rgba(255, 255, 255, .5);
+border: 1px #fff solid;
+border-radius: 5px;
+padding: 10px;
+font-size: 10px;
 }
