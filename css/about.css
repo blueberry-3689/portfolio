@@ -38,6 +38,7 @@ margin-top: 80px;
 display: flex;
 justify-content: center;
 align-items: center;
+gap: 40px;
 }
 .about img{
 width: 500px;
@@ -97,6 +98,7 @@ align-items: center;
 width: 135px;
 height: 135px;
 object-fit: cover;
+filter: drop-shadow(2px 4px 6px black);
 }
 .skill_content div{
 margin-left: 50px;
@@ -105,6 +107,7 @@ margin-left: 50px;
 font-family: LFT Etica Sheriff;
 font-size: 30px;
 margin: 0;
+text-shadow: 1px 3px 3px #513c3c;
 }
 .skill_content p{
 font-family: LFT Etica Sheriff;

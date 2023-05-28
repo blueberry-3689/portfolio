@@ -1,9 +1,19 @@
-.top img{
-width: 100%;
-height: 100vh;
+#slide ul{
 position: relative;
+}
+#slide li{
+    position: absolute;
+    width: 100%;
 object-fit: cover;
-z-index: 0;
+}
+#button ul li a{
+    text-indent: -9999px;
+text-decoration: none;
+display: block;
+width: 14px;
+height: 14px;
+border-radius: 7px;
+background-color: #A8DCDB;
 }
 .top h2{
 color: #fff;
