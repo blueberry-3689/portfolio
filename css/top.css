@@ -2,18 +2,27 @@
 position: relative;
 }
 #slide li{
-    position: absolute;
-    width: 100%;
+position: absolute;
+object-fit: cover;
+list-style: none;
+}
+#slide img{
+width: 100%;
+height: 100vh;
 object-fit: cover;
 }
+#button ul li{
+list-style: none;
+}
 #button ul li a{
-    text-indent: -9999px;
+text-indent: -9999px;
 text-decoration: none;
 display: block;
 width: 14px;
 height: 14px;
 border-radius: 7px;
 background-color: #A8DCDB;
+position: relative;
 }
 .top h2{
 color: #fff;
@@ -21,11 +30,11 @@ font-family: Yellowtail;
 font-size: 125px;
 font-weight: 500;
 text-align: center;
-position: absolute;
+position: relative;
 z-index: 5;
 right: 0;
 left: 0;
-top: 292px;
+top: 190px;
 margin: auto;
 }
 .top_message {
@@ -33,7 +42,7 @@ display: flex;
 text-align: center;
 align-items: center;
 justify-content: center;
-margin: 180px 0 150px 0;
+margin: 600px 0 150px 0;
 }
 .top_message h2{
 font-family: LFT Etica Sheriff;
@@ -125,12 +134,15 @@ position: relative;
 .gallery{
 display: grid;
 }
-.gallery_1,.gallery_2{
+.gallery_1{
 display: flex;
+gap: 10px;
+max-width: 1250px;
+margin: 0 auto;
 }
 .gallery img{
 width: 33.3%;
-height: 440px;
+height: 250px;
 object-fit: cover;
 }
 @media (min-width: 1060px) and (max-width: 1215px){
@@ -189,7 +201,7 @@ object-fit: cover;
 font-size: 72px;
 }
 .top_message{
-margin: 90px 0 90px 0;
+margin: 570px 0 90px 0;
 }
 .top_message h2{
 font-size: 10px;
@@ -223,7 +235,7 @@ font-weight: 600;
 font-size: 62px;
 }
 .top_message{
-margin: 90px 0 90px 0;
+margin: 570pxpx 0 90px 0;
 }
 .top_message h2{
 font-size: 10px;
@@ -251,14 +263,17 @@ font-size: 75px;
 }
 }
 @media(max-width: 460px){
-.top img{
-height: 665px;
-}
+#slide img{
+width: 100%;
+height: 540px;
+object-fit: cover;
+}   
 .top h2{
 font-size: 35px;
+top: 135px;
 }
 .top_message{
-margin: 90px 0 90px 0;
+margin: 470px 0 90px 0;
 }
 .top_message h2{
 font-size: 10px;

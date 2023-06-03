@@ -28,7 +28,149 @@ margin-right: auto;
 .td-1{
 width: 200px;
 height: 70px;
+font-weight: 600;
 }
 .design{
+font-weight: 600;
 display: flex;
+}
+@media (min-width: 1110px) and (max-width: 1175px){
+.top img{
+width: 1000px;
+height: 555px;
+}
+}
+@media (min-width: 980px) and (max-width: 1110px){
+.top img{
+width: 880px;
+height: 490px;
+}
+.portfolio_content {
+padding: 45px;
+margin-top: 100px;
+}
+}
+@media (min-width: 915px) and (max-width: 980px){
+.top img{
+width: 880px;
+height: 490px;
+}
+.portfolio_content {
+padding: 45px;
+margin-top: 100px;
+}
+}
+@media (min-width: 870px) and (max-width: 915px){
+.top h2{
+font-size: 55px;
+}
+.top img{
+width: 765px;
+height: 430px;
+}
+.portfolio_content {
+padding: 45px;
+margin-top: 100px;
+}
+}
+@media (min-width: 780px) and (max-width: 870px){
+.top h2{
+font-size: 55px;
+}
+.top img{
+width: 765px;
+height: 430px;
+}
+.portfolio_content {
+padding: 45px;
+margin-top: 100px;
+}
+}
+@media (min-width: 600px) and (max-width: 780px){
+.top h2{
+font-size: 40px;
+}
+.top img{
+width: 575px;
+height: 355px;
+}
+.portfolio_content {
+padding: 45px;
+margin-top: 100px;
+}
+}
+@media (min-width: 455px) and (max-width: 600px){
+.top h2{
+font-size: 35px;
+}
+.top img{
+width: 440px;
+height: 270px;
+}
+.portfolio_content {
+padding: 45px;
+margin-top: 100px;
+}
+.table_content{
+display: grid;
+}
+.td-1,.td-2{
+display: flex;
+}
+.td-1,.design{
+height: 38px;
+}
+.td-2{
+padding-bottom: 35px;
+}
+}
+@media (min-width: 390px) and (max-width: 455px){
+.top h2{
+font-size: 25px;
+}
+.top img{
+width: 375px;
+height: 215px;
+}
+.portfolio_content {
+padding: 45px;
+margin-top: 45px;
+}
+.table_content{
+display: grid;
+}
+.td-1,.td-2{
+display: flex;
+}
+.td-1,.design{
+height: 38px;
+}
+.td-2{
+padding-bottom: 35px;
+}
+}
+@media(max-width: 390px){
+.top h2{
+font-size: 20px;
+}
+.top img{
+width: 285px;
+height: 180px;
+}
+.portfolio_content {
+padding: 45px;
+margin-top: 45px;
+}
+.table_content{
+display: grid;
+}
+.td-1,.td-2{
+display: flex;
+}
+.td-1,.design{
+height: 38px;
+}
+.td-2{
+padding-bottom: 35px;
+}
 }

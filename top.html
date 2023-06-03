@@ -7,35 +7,43 @@
     <title>Yumika Nagayama</title>
     <link rel="stylesheet" href="../portfolio/css/main.css">
     <link rel="stylesheet" href="../portfolio/css/top.css">
+    <script src="../portfolio/javascript/jquery-3.7.0.min.js"></script>
     <script src="../portfolio/javascript/top.js" defer></script>
+    <script src="../portfolio/javascript/main.js"></script>
 </head>
 <body>
     <header class="header">
-        <h2><a href="top.html">
-           <img src="" alt="ロゴマーク" width="100">
-           </a>
-        </h2>
-        <div>
-        <ul>
-            <li>
-               <a href="../portfolio/about.html">About</a>
-            </li>
-            <li>
-               <a href="work.html">Work</a>
-            </li>
-            <li>
-               <a href="contact.html">Contact</a>
-            </li>
-        </ul>
-        </div>
+      <div class="header_inner">
+         <h1 class="header_title header-title">
+            <a href="top.html">
+               <img src="" alt="ロゴマーク" width="100">
+            </a>
+         </h1>
+         <nav class="header_nav nav" id="js-nav">
+            <ul class="nav_items nav-items">
+               <li class="nav-tiems_item"><a href="about.html">About</a></li>
+               <li class="nav-tiems_item"><a href="work.html">Work</a></li>
+               <li class="nav-tiems_item"><a href="contact.html">Contact</a></li>
+            </ul>
+         </nav>
+         <button class="header_hambuger hamburger active" id="js-hamburger" >
+            <span></span>
+            <span></span>
+            <span></span>
+         </button>
+      </div>
   </header>
   <main class="main">
      <section class="top">
       <div id="slide">
          <ul>
-            <li><img src="picture/top.JPG" width="1000" height="500" alt="" ></li>
-            <li><img src="picture/top_2.jpeg" width="1000" height="500" alt=""></li>
-            <li><img src="picture/gallery5.JPG" width="1000" height="500" alt=""></li>
+            <li><img src="picture/top.JPG" alt="" ></li>
+            <li><img src="picture/top2.JPG"  alt=""></li>
+            <li><img src="picture/top3.JPG"  alt=""></li>
+            <li><img src="picture/top4.JPG"  alt=""></li>
+            <li><img src="picture/top5.jpg"  alt=""></li>
+            <li><img src="picture/top6.jpeg"  alt=""></li>
+            <li><img src="picture/top7.JPG"  alt=""></li>
          </ul>
       </div>
       <div id="button">
@@ -43,6 +51,10 @@
             <li><a href="#" class="target">1</a></li>
             <li><a href="#">2</a></li>
             <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+            <li><a href="#">7</a></li>
          </ul>
       </div>
         <h2>Yumika  Nagayama</h2>
@@ -75,14 +87,9 @@
      </section>
      <section class="gallery">
        <div class="gallery_1">
-         <img src="picture/gallery1.JPG" alt="gallery1" width="100">
-         <img src="picture/gallery2.JPG" alt="gallery2" width="100">
-         <img src="picture/gallery3.JPG" alt="gallery3" width="100">
-       </div>
-       <div class="gallery_2">
-         <img src="picture/gallery4.JPG" alt="gallery4" width="100">
-         <img src="picture/gallery5.JPG" alt="gallery5" width="100">
-         <img src="picture/gallery6.JPG" alt="gallery6" width="100">
+         <img src="picture/gallery2.JPG" alt="gallery1" width="100">
+         <img src="picture/gallery4.JPG" alt="gallery2" width="100">
+         <img src="picture/gallery6.JPG" alt="gallery3" width="100">
        </div>
      </section>
   </main>
