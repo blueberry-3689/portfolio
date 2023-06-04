@@ -1,6 +1,9 @@
 body{
 margin: 0;
 }
+.main{
+margin: auto;
+}
 .header {
 height: 70px;
 width: 100%;
@@ -8,8 +11,8 @@ background-color: rgba(81, 81, 81, 0.50);
 top: 0;
 left: 0;
 right: 0;
-z-index: 5;
-position: fixed
+position: fixed;
+z-index: 9999;
 }
 .header_inner{
 padding: 0 20px;
@@ -35,25 +38,33 @@ right: 0;
 left: 0;
 top: 0;
 width: 100%;
-height: 100vh;
 transform: translateX(100%);
 background-color: #fff;
 transition: ease .4s;
 }
+.nav-items {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+padding: 0;
+}
+/*ハンバーガーメニュー*/
 .header_hamburger{
 width: 48px;
 height: 100%;
 }
-.nav-tiems_item a:hover {
-opacity: 0.5;
-}
-/*ハンバーガーメニュー*/
 .hamburger{
 background-color: transparent;
 border-color: transparent;
 z-index: 9999;
 }
-.hamburger_span{
+.nav-tiems_item a:hover {
+opacity: 0.5;
+}
+
+/*ハンバーガーメニューの線*/
+.hamburger span{
 width: 100%;
 height: 1px;
 background-color: #fff;
@@ -61,6 +72,18 @@ position: relative;
 transition: ease .4s;
 display: block;
 }
+.hamburger span:nth-child(1){
+top: 0;
+height: 2px;
+}
+.hamburger span:nth-child(2){
+margin: 8px 0;
+height: 1.5px;
+}
+.hamburger span:nth-child(3){
+top: 3;
+}
+/* ハンバーガーメニュークリック後のスタイル */
 .hamburger_nav.active{
 transform: translateX(0);
 }
@@ -106,41 +129,12 @@ background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
 object-fit: cover;
-height: 350px;
+height: 105px;
 margin-top: 200px;
 }
 .footer-content{
 background-color: rgba(81, 81, 81, 0.50);
-height: 350px;
-}
-.site-map{
-display: flex;
-list-style: none;
-justify-content: center;
-align-items: center;
-padding-top: 75px;
-}
-.footer img{
-width: 110px;
-height: 110px;
-padding-left: 70px;
-}
-.footer-manu{
-margin: 0 0 0 auto;
-padding-right: 160px;
-}
-.footer ul{
-display:flex;
-}
-.footer  ul li{
-list-style: none; 
-padding-left: 70px;
-}
-.footer a{
-text-decoration: none;
-font-family: Yellowtail;
-font-size: 30px;
-color: #fff;
+height: 105px;
 }
 .footer__copyright{
 display: flex;
@@ -149,12 +143,19 @@ color: #fff;
 font-family: Yellowtail;
 font-size: 15px;
 font-weight: 300;
-bottom: -140px;
 position: relative;
 }
 
+
 /*pcヘッダー*/
 @media screen and (min-width: 960px){
+.nav-items {
+position: inherit;
+top: 0;
+left: 0;
+transform: translate(0, 0);
+
+}
 .header_nav{
 position: static;
 transform: initial;
@@ -172,22 +173,28 @@ height: inherit;
 justify-content: space-between;
 gap: 80px;
 margin-right: 100px;
-}
-/*ｐｃ時日表示する*/
-.hamburger{
-display: none;
-}
-.nav-items{
 position: inherit;
 top: 0;
 left: 0;
 transform: translate(0,0);
 }
+/* ナビのリンク */
 .nav-tiems_item a{
 margin-bottom: 0;
 color: #fff;
 font-size: 35px;
 }
+/*ハンバーガーメニュー*/
+.hamburger {
+background-color: transparent;
+border-color: transparent;
+z-index: 9999;
+}
+/*ｐｃ時日表示する*/
+.hamburger{
+display: none;
+}
+
 }
 .footer-manu{
 display: none;

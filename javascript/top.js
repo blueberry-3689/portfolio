@@ -34,20 +34,16 @@ $(function(){
 });
 
 
-
-
-
 //トップメッセージのアニメーション
-const showmessage =(entries) => {
-    const keyframes ={
-        opacity: [0,1],
-        translate: ['0 100px', 0],
-    };
-    entries[0].target.animate(keyframes, 600);
-};
-
-//監視ロボットの設定
-const messageObserber = new IntersectionObserver(showmessage);
-
-//#messageを監視するように指示
-messageObserber.observe(document.querySelector('#message'));
+$(function () {
+    $(window).scroll(function(){
+      var windowHeight = $(window).height(),
+      scrollY = $(window).scrollTop();
+      $('.scroll_fadein').each(function(){
+        var thisPosition = $(this).offset().top;
+        if(scrollY > thisPosition - windowHeight){
+          $(this).addClass('fadein_animation_start');
+        }
+      });
+    });
+  });

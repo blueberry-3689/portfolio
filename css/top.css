@@ -1,5 +1,14 @@
+.top{
+min-height: 100vh;
+width: 100%;
+position: relative;
+}
 #slide ul{
 position: relative;
+width: 100%;
+padding: 0;
+margin: 0;
+min-height: 100vh;
 }
 #slide li{
 position: absolute;
@@ -8,8 +17,17 @@ list-style: none;
 }
 #slide img{
 width: 100%;
-height: 100vh;
+min-height: 100vh;
 object-fit: cover;
+}
+#button ul{
+display: flex;
+gap: 20px;
+justify-content: center;
+align-items: center;
+padding: 0;
+top: 20px;
+margin-top: -40px;
 }
 #button ul li{
 list-style: none;
@@ -21,7 +39,7 @@ display: block;
 width: 14px;
 height: 14px;
 border-radius: 7px;
-background-color: #A8DCDB;
+background-color: #fff;
 position: relative;
 }
 .top h2{
@@ -30,19 +48,51 @@ font-family: Yellowtail;
 font-size: 125px;
 font-weight: 500;
 text-align: center;
-position: relative;
+position: absolute;
 z-index: 5;
 right: 0;
 left: 0;
-top: 190px;
-margin: auto;
+top: 165px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.scroll_fadein{
+opacity: 0;
+}
+.fadein_animation_start{
+animation-name: fadein_animation;
+animation-delay: 0.3s;
+animation-duration: 1s;
+animation-fill-mode:both;
+}
+@keyframes fadein_animation{
+0%{
+opacity: 0;
+}
+100%{
+opacity: 1;
+transform: franslate(0);
+}
+}
+.slldeup{
+transform: translateY(50px);
+}
+.slidedown{
+transform: translateY(-50px);
+}
+.slideright{
+transform: translateX(50px);
+}
+.slideleft{
+transform: translateX(-50px);
 }
 .top_message {
 display: flex;
 text-align: center;
 align-items: center;
 justify-content: center;
-margin: 600px 0 150px 0;
+margin: 200px 0 150px 0;
 }
 .top_message h2{
 font-family: LFT Etica Sheriff;
@@ -265,12 +315,15 @@ font-size: 75px;
 @media(max-width: 460px){
 #slide img{
 width: 100%;
-height: 540px;
 object-fit: cover;
-}   
+min-height: 530px;
+} 
+#button{
+margin-top:-155px
+}  
 .top h2{
 font-size: 35px;
-top: 135px;
+top: 220px;
 }
 .top_message{
 margin: 470px 0 90px 0;

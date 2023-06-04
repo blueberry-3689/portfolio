@@ -7,25 +7,28 @@
     <title>Yumika Nagayama</title>
     <link rel="stylesheet" href="../portfolio/css/main.css">
     <link rel="stylesheet" href="../portfolio/css/work.css">
+    <script src="../portfolio/javascript/main.js" defer></script>
 </head>
 <body>
     <header class="header">
-        <h2><a href="top.html">
-            <img src="" alt="ロゴマーク" width="100">
-            </a>
-        </h2>
-        <div>
-        <ul>
-            <li>
-                <a href="../portfolio/about.html">About</a>
-            </li>
-            <li>
-                <a href="../portfolio/work.html">Work</a>
-            </li>
-            <li>
-                <a href="contact.html">Contact</a>
-            </li>
-        </ul>
+        <div class="header_inner">
+           <h1 class="header_title header-title">
+              <a href="top.html">
+                 <img src="" alt="ロゴマーク" width="100">
+              </a>
+           </h1>
+           <nav class="header_nav nav" id="js-nav">
+              <ul class="nav_items nav-items">
+                 <li class="nav-tiems_item"><a href="about.html">About</a></li>
+                 <li class="nav-tiems_item"><a href="work.html">Work</a></li>
+                 <li class="nav-tiems_item"><a href="contact.html">Contact</a></li>
+              </ul>
+           </nav>
+           <button class="header_hamburger hamburger" id="js-hamburger" >
+              <span></span>
+              <span></span>
+              <span></span>
+           </button>
         </div>
     </header>
     <main>
@@ -34,15 +37,16 @@
             <h2>WORK</h2>
         </section>
         <section class="work">
-            <section class="work_choice">
-                <a href="">All</a>
-                <a href="">Web</a>
-                <a href="">Design</a>
-                <a href="">Movie</a>
+            <section class="choice">
+                <div class="btn">
+                <a href="" class="all" data-filter="all">All</a>
+                <a href="" class="web" data-filter="web">Web</a>
+                <a href="" class="movie" data-filter="movie">Movie</a>
+               </div>
             </section>
             <section class="work_content">
-                <ul>
-                    <li>
+                <ul class="list">
+                    <li class="web" data-category="web">
                         <div class="sample_box">
                         <a href="portfolio.html">
                         <img src="picture/portfolio_1.png" alt="portfolio_1" width="100">
@@ -53,7 +57,7 @@
                             <p>デザイン/コーディング</p>
                         </div>
                     </li>
-                    <li>
+                    <li class="web" data-category="web">
                         <div class="sample_box">
                         <a href="mito.html">
                         <img src="picture/mito.png" alt="mito" width="100">
@@ -63,7 +67,7 @@
                             <h2>水戸観光(架空サイト)</h2>
                             <p>デザイン/コーディング</p>
                     </li>
-                    <li>
+                    <li class="web" data-category="web">
                         <div class="sample_box">
                         <a href="deafpeace.html">
                         <img src="picture/peace.png" alt="peace" width="100">
@@ -74,7 +78,7 @@
                             <p>デザイン/コーディング</p>
                         </div>
                     </li>
-                    <li>
+                    <li class="web" data-category="web">
                         <div class="sample_box">
                         <a href="tabesugu.html">
                         <img src="picture/tabesugu.png" alt="tabesugu" width="100">
@@ -85,7 +89,7 @@
                             <p>デザイン/コーディング</p>
                         </div>
                     </li>
-                    <li>
+                    <li class="web" data-category="web">
                         <div class="sample_box">
                         <img src="picture/portfolio_2.png" alt="portfolio_2" width="100">
                         </div>
@@ -94,7 +98,7 @@
                             <p>デザイン/コーディング</p>
                         </div>
                     </li>
-                    <li>
+                    <li class="movie" data-category="movie">
                         <div class="sample_box">
                         <a href="tokyo.html">
                         <img src="picture/tokyo.JPG" alt="tokyo" width="100">
@@ -105,7 +109,7 @@
                             <p>動画制作</p>
                         </div>
                     </li>
-                    <li>
+                    <li class="movie" data-category="movie">
                         <div class="sample_box">
                         <a href="mito_movie.html">
                         <img src="picture/mito_movie.jpg" alt="mito_movie" width="100">

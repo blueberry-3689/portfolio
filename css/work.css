@@ -23,19 +23,31 @@ margin: auto;
 .work{
 margin-top: 200px;
 }
-.work_choice{
+.btn{
 display: flex;
 justify-content: center;
 gap: 75px;
 }
-.work_choice a{
+.choice a{
 text-decoration: none;
 color: #4C4C4C;
 font-family: LFT Etica Sheriff;
 font-size: 30px;
 }
-.work_choice a:hover {
+.choice a:hover {
 opacity: 0.5;
+}
+.list li:nth-child(even){
+margin-right: 0;
+}
+
+@keyframes test {
+0% {
+transform: scale(.1);
+}
+100% {
+transform: none;
+}
 }
 .work_content{
 margin: 0 auto;
