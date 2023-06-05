@@ -84,7 +84,7 @@ height: 1.5px;
 top: 3;
 }
 /* ハンバーガーメニュークリック後のスタイル */
-.hamburger_nav.active{
+.header_nav.active{
 transform: translateX(0);
 }
 .hamburger.active span:nth-child(1){
@@ -144,6 +144,7 @@ font-family: Yellowtail;
 font-size: 15px;
 font-weight: 300;
 position: relative;
+padding-top: 50px;
 }
 
 
@@ -190,7 +191,7 @@ background-color: transparent;
 border-color: transparent;
 z-index: 9999;
 }
-/*ｐｃ時日表示する*/
+/*ｐｃ時非表示する*/
 .hamburger{
 display: none;
 }

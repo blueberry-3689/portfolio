@@ -211,9 +211,6 @@ color: #646464;
 .top h2{
 font-size: 75px;
 }
-.work_choice a {
-font-size: 20px;
-}
 .work_content ul {
 display: contents;
 }
@@ -245,10 +242,7 @@ color: #646464;
 .top h2{
 font-size: 65px;
 }
-.work_choice{
-gap:30px
-}
-.work_choice a {
+.choice a {
 font-size: 20px;
 }
 .work_content ul {
@@ -290,10 +284,10 @@ margin-top: -100px;
 .work{
 margin-top: 100px;
 }
-.work_choice{
-gap:30px;
+.btn{
+gap: 38px;
 }
-.work_choice a {
+.choice a {
 font-size: 12px;
 }
 .work_content{
